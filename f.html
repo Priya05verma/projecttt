@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocMed - AI Virtual Health Assistant for Refugees</title>
+    <link href="f.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body data-theme="light">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>DocMed AI</span>
+                </div>
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>AI-Enabled Virtual Health Assistant</h1>
+                <p class="hero-subtitle">Providing confidential, multilingual healthcare guidance for refugees worldwide. Get instant medical advice, find nearby services, and manage your health anonymously with cutting-edge AI technology.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Available Support</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Anonymous & Secure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Anonymous Symptom Checker -->
+                <div class="info-box" data-box="symptomChecker">
+                    <div class="info-box-header">
+                        <div class="info-box-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3>Anonymous Symptom Checker</h3>
+                    </div>
+                    <p>Enter symptoms or health questions anonymously via chat, voice, or SMS. Our AI helps triage symptoms and recommends appropriate care levels.</p>
+                    <ul class="info-box-features">
+                        <li><i class="fas fa-check-circle"></i> Real-time symptom analysis</li>
+                        <li><i class="fas fa-check-circle"></i> AI-powered triage system</li>
+                        <li><i class="fas fa-check-circle"></i> Voice and text input support</li>
+                        <li><i class="fas fa-check-circle"></i> Instant care recommendations</li>
+                    </ul>
+                </div>
+
+                <!-- Medical Guidance -->
+                <div class="info-box" data-box="medicalGuidance">
+                    <div class="info-box-header">
+                        <div class="info-box-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>Medical Guidance</h3>
+                    </div>
+                    <p>Provides easy-to-understand, culturally sensitive health advice covering common illnesses, chronic diseases, mental health, and emergencies.</p>
+                    <ul class="info-box-features">
+                        <li><i class="fas fa-check-circle"></i> Culturally sensitive advice</li>
+                        <li><i class="fas fa-check-circle"></i> Mental health support</li>
+                        <li><i class="fas fa-check-circle"></i> Chronic disease management</li>
+                        <li><i class="fas fa-check-circle"></i> Emergency protocols</li>
+                    </ul>
+                </div>
+
+                <!-- Healthcare Service Locator -->
+                <div class="info-box" data-box="serviceLocator">
+                    <div class="info-box-header">
+                        <div class="info-box-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Healthcare Service Locator</h3>
+                    </div>
+                    <p>Uses geolocation to recommend nearby humanitarian health services, clinics, and organizations offering free or low-cost care.</p>
+                    <ul class="info-box-features">
+                        <li><i class="fas fa-check-circle"></i> GPS-based location finder</li>
+                        <li><i class="fas fa-check-circle"></i> Free & low-cost services</li>
+                        <li><i class="fas fa-check-circle"></i> Humanitarian organizations</li>
+                        <li><i class="fas fa-check-circle"></i> Real-time availability</li>
+                    </ul>
+                </div>
+
+                <!-- Anonymous Medical Records -->
+                <div class="info-box" data-box="medicalRecords">
+                    <div class="info-box-header">
+                        <div class="info-box-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Anonymous Medical Records</h3>
+                    </div>
+                    <p>Generates unique anonymous tokens tied to encrypted medical histories. Patients hold these tokens to share with any doctor for continuity of care.</p>
+                    <ul class="info-box-features">
+                        <li><i class="fas fa-check-circle"></i> Unique anonymous tokens</li>
+                        <li><i class="fas fa-check-circle"></i> Encrypted medical history</li>
+                        <li><i class="fas fa-check-circle"></i> Doctor sharing capability</li>
+                        <li><i class="fas fa-check-circle"></i> Complete privacy protection</li>
+                    </ul>
+                    <button class="action-btn" onclick="showOptions('records')" data-button="records">
+                        <i class="fas fa-key"></i> Create Token
+                    </button>
+                </div>
+
+                <!-- Multilingual Support -->
+                <div class="info-box" data-box="languageSupport">
+                    <div class="info-box-header">
+                        <div class="info-box-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Multilingual Support</h3>
+                    </div>
+                    <p>Supports multiple languages native to refugee populations with translation or direct multilingual AI models for seamless communication.</p>
+                    <ul class="info-box-features">
+                        <li><i class="fas fa-check-circle"></i> 15+ supported languages</li>
+                        <li><i class="fas fa-check-circle"></i> Real-time translation</li>
+                        <li><i class="fas fa-check-circle"></i> Native language AI models</li>
+                        <li><i class="fas fa-check-circle"></i> Cultural adaptation</li>
+                    </ul>
+                    <div class="language-selector">
+                        <label for="languageSelect"><strong>Select Language:</strong></label>
+                        <select id="languageSelect" onchange="changeLanguage(this.value)">
+                            <option value="en">🇺🇸 English</option>
+                            <option value="hi">�� हिंदी (Hindi)</option>
+                            <option value="bho">�� भोजपुरी (Bhojpuri)</option>
+                            <option value="kn">🇮� ಕನ್ನಡ (Kannada)</option>
+                            <option value="fr">�� Français (French)</option>
+                            <option value="zh">�� 中文 (Chinese)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Emergency Alerts -->
+                <div class="info-box emergency-box" data-box="emergency">
+                    <div class="info-box-header">
+                        <div class="info-box-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>Emergency Alerts</h3>
+                    </div>
+                    <p>Provides immediate advice and emergency contact info in critical health situations with instant response protocols and local emergency services.</p>
+                    <ul class="info-box-features">
+                        <li><i class="fas fa-check-circle"></i> Instant emergency response</li>
+                        <li><i class="fas fa-check-circle"></i> Local emergency contacts</li>
+                        <li><i class="fas fa-check-circle"></i> Critical situation protocols</li>
+                        <li><i class="fas fa-check-circle"></i> 24/7 emergency support</li>
+                    </ul>
+                    <button class="action-btn emergency" onclick="showOptions('emergency')" data-button="emergency">
+                        <i class="fas fa-exclamation-triangle"></i> Emergency Help
+                    </button>
+                </div>
+
+                <!-- Interactive Chat Interface -->
+                <div class="info-box chat-box" data-box="chatAssistant">
+                    <div class="info-box-header">
+                        <div class="info-box-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI Health Assistant Chat</h3>
+                    </div>
+                    <p>Start a conversation with our AI health assistant. Ask questions, describe symptoms, or get general health guidance in your preferred language.</p>
+                    
+                    <div class="chat-interface">
+                        <div class="chat-messages" id="chatMessages"></div>
+                        <div class="chat-input-container">
+                            <input type="text" class="chat-input" id="chatInput" placeholder="Type your health question here..." onkeypress="if(event.key === 'Enter') sendMessage()">
+                            <button class="send-btn" onclick="sendMessage()">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Low-Bandwidth & Offline Support -->
+                <div class="info-box" data-box="lowBandwidth">
+                    <div class="info-box-header">
+                        <div class="info-box-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3>Low-Bandwidth Support</h3>
+                    </div>
+                    <p>Lightweight app with SMS fallback, offline query storage, and asynchronous syncing when connectivity improves for areas with limited internet.</p>
+                    <ul class="info-box-features">
+                        <li><i class="fas fa-check-circle"></i> SMS fallback system</li>
+                        <li><i class="fas fa-check-circle"></i> Offline query storage</li>
+                        <li><i class="fas fa-check-circle"></i> Asynchronous syncing</li>
+                        <li><i class="fas fa-check-circle"></i> Minimal data usage</li>
+                    </ul>
+                    <button class="action-btn" onclick="showOptions('offline')" data-button="offline">
+                        <i class="fas fa-cloud-download-alt"></i> Enable Offline
+                    </button>
+                </div>
+
+                <!-- User Education -->
+                <div class="info-box" data-box="healthEducation">
+                    <div class="info-box-header">
+                        <div class="info-box-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Health Education</h3>
+                    </div>
+                    <p>Delivers simple health tips, vaccination reminders, and preventive care guidance tailored to refugee health needs and cultural contexts.</p>
+                    <ul class="info-box-features">
+                        <li><i class="fas fa-check-circle"></i> Vaccination schedules</li>
+                        <li><i class="fas fa-check-circle"></i> Nutrition guidance</li>
+                        <li><i class="fas fa-check-circle"></i> Preventive care tips</li>
+                        <li><i class="fas fa-check-circle"></i> Wellness programs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> class
